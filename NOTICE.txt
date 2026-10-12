@@ -1,0 +1,17 @@
+TXGamingMacFanControl 0.4.0
+
+New application, ASUS WMI bridge, CLI broker and ACPI wrapper:
+Copyright (c) 2026, iivn1026. BSD-3-Clause; see LICENSE.
+
+The status reader src/statusreader.c is derived from helper/fanctl.c in
+FanControl-macOS v1.5.0 by glassecho, commit
+fa86682ceac9f98683d00bb1b6f0bc7ddd0abb07.
+Copyright (c) 2026, 岁岁平安. BSD-3-Clause; see LICENSE-FanControl.txt.
+https://github.com/glassecho/FanControl-macOS
+The command dispatcher is restricted to read/sys/gpu/version. Upstream write
+routines remain in the source but are not exposed by this status reader.
+
+Linux asus-wmi, G-Helper and AsusSMC were consulted as API/identifier references.
+No AsusSMC, Linux driver, G-Helper code, Nuvoton driver, gpufand daemon or upstream
+icon is redistributed. No upstream author endorsement is claimed.
+The monochrome icon is independently generated for this project.
