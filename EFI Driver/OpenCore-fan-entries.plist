@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ACPI</key>
+	<dict>
+		<key>Add</key>
+		<array>
+			<dict>
+				<key>Comment</key>
+				<string>FX608LM read-only firmware fan-mode getter</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-TXGFAN.aml</string>
+			</dict>
+		</array>
+	</dict>
+	<key>Kernel</key>
+	<dict>
+		<key>Add</key>
+		<array>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>BundlePath</key>
+				<string>TXGamingFanBridge.kext</string>
+				<key>Comment</key>
+				<string>FX608LM ASUS fan bridge: first-boot read-only probe</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/TXGamingFanBridge</string>
+				<key>MaxKernel</key>
+				<string>24.99.99</string>
+				<key>MinKernel</key>
+				<string>24.0.0</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

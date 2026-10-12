@@ -8,3 +8,7 @@ dist/
 __pycache__/
 .DS_Store
 update-usb-bridge.py
+
+# Track the tested, ready-to-install driver package.
+!EFI Driver/
+!EFI Driver/**

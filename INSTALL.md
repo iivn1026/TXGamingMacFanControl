@@ -8,6 +8,8 @@ Open the Intel DMG, then drag TXGamingMacFanControl.app to Applications. The app
 
 ### OpenCore driver — tested FX608LM firmware only
 
+Ready-to-install files are in the repository’s `EFI Driver/` directory and in the DMG. For the repository copy, download **Code → Download ZIP** and extract it; a kext is a complete folder bundle, not just its Info.plist.
+
 1. Back up the entire working EFI and keep a bootable recovery USB.
 2. Mount the EFI partition used by your macOS OpenCore installation.
 3. Copy `EFI Driver/TXGamingFanBridge.kext` to `EFI/OC/Kexts/`.
@@ -31,6 +33,8 @@ Boot the backup EFI if needed. Disable/remove only the two fan-related OpenCore 
 打开 Intel DMG，把 TXGamingMacFanControl.app 拖入“应用程序”。应用为临时签名，未公证。确认下载来源后，必要时通过系统“隐私与安全性”中的“仍要打开”允许该应用。
 
 ### 安装 EFI 驱动（仅已测试的 FX608LM 固件）
+
+编译好的文件已附在仓库 `EFI Driver/` 目录和 DMG 内。从仓库下载时选择 **Code → Download ZIP** 后解压；kext 是完整文件夹包，不能只下载 Info.plist。
 
 1. 备份完整可用 EFI，并保留能够启动的备用 U 盘。
 2. 挂载 macOS 实际使用的 OpenCore EFI 分区。
